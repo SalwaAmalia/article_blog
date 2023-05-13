@@ -1,0 +1,10 @@
+[build]
+command = "composer install && npm install && npm run production"
+publish = "public"
+functions = "functions"
+
+[[redirects]]
+from = "/*"
+to = "/index.php/:splat"
+status = 200
+force = true
